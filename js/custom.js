@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    // GET CURRENT DATE 
+    function setTime() {
+        var d = new Date();
+        var hour = d.getHours() > 9 ? d.getHours() : `0${d.getHours()}`;
+        var min = d.getMinutes() > 9 ? d.getMinutes() : `0${d.getMinutes()}`;
+        var sec = d.getSeconds() > 9 ? d.getSeconds() : `0${d.getSeconds()}`;
+        $(".menu-top .date").text(`${hour}:${min}:${sec}`);
+    }
+    setTime();
+    setInterval(setTime, 1000);
+    // 
+
     $(window).scroll(function() {
         let endHeightBanner = $(".banner").height();
         if ($(this).scrollTop() > endHeightBanner / 2) {
@@ -31,8 +43,8 @@ $(document).ready(function() {
 
     $(".wrap-banner_slide").slick({
         dots: true,
-        autoplay: false,
-        autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 2500,
         infinite: true,
         speed: 500,
         fade: true,
@@ -44,6 +56,8 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         speed: 300,
+        autoplay: true,
+        autoplaySpeed: 2500,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [{
@@ -64,13 +78,6 @@ $(document).ready(function() {
                 }
             },
         ]
-    });
-
-    // FORM REGISTER
-    $(".register label").each((i, e) => {
-        e.innerHTML = e.innerText.split('')
-            .map((letter, id) => `<span style="transition-delay:${id * 30}ms;"> ${letter}</span>`)
-            .join('');
     });
     // SLICK NEWS
     $(".wrap-new").slick({
