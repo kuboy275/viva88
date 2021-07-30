@@ -1,21 +1,25 @@
 @font-face {
     font-family: San-Light;
     src: url(../fonts/SanFranciscoDisplay-Light.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: San-Regular;
     src: url(../fonts/SanFranciscoDisplay-Regular.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: San-Medium;
     src: url(../fonts/SanFranciscoDisplay-Medium.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: San-Bold;
     src: url(../fonts/SanFranciscoDisplay-Bold.otf);
+    font-display: swap;
 }
 
 html {
@@ -282,7 +286,6 @@ nav.navbar.active {
 /* START SLIDER CONTENT */
 
 .slide-content {
-    /* background-color: rgba(35, 61, 103, .3); */
     background: linear-gradient(to top, rgba(35, 61, 103, 1), rgba(35, 61, 103, .5), rgba(35, 61, 103, .2));
 }
 
@@ -446,7 +449,6 @@ nav.navbar.active {
 .register form .form-group #code {
     padding: 0 15px;
     border-radius: 20px;
-    /* background-color: #FF5E00; */
     background: url(../images/bg-code.jpg) no-repeat;
     background-size: cover;
     color: #fff;
