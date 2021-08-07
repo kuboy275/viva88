@@ -151,4 +151,7 @@
         margin: 0!important;
         margin-top: 10px;
     }
+    .list-status table tbody tr td:nth-child(5) .btn {
+        width: auto;
+    }
 }

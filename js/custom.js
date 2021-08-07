@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
     // GET CURRENT DATE 
-    function setTime() {
-        var d = new Date();
-        var hour = d.getHours() > 9 ? d.getHours() : `0${d.getHours()}`;
-        var min = d.getMinutes() > 9 ? d.getMinutes() : `0${d.getMinutes()}`;
-        var sec = d.getSeconds() > 9 ? d.getSeconds() : `0${d.getSeconds()}`;
-        $(".menu-top .date").text(`${hour}:${min}:${sec}`);
-    }
-    setTime();
-    setInterval(setTime, 1000);
+    // function setTime() {
+    //     var d = new Date();
+    //     var hour = d.getHours() > 9 ? d.getHours() : `0${d.getHours()}`;
+    //     var min = d.getMinutes() > 9 ? d.getMinutes() : `0${d.getMinutes()}`;
+    //     var sec = d.getSeconds() > 9 ? d.getSeconds() : `0${d.getSeconds()}`;
+    //     $(".menu-top .date").text(`${hour}:${min}:${sec}`);
+    // }
+    // setTime();
+    // setInterval(setTime, 1000);
     // 
 
     $(window).scroll(function() {
@@ -17,9 +17,11 @@ $(document).ready(function() {
         if ($(this).scrollTop() > endHeightBanner / 2) {
             $(".onTop").addClass("active");
             $(".navbar").addClass("active");
+            $(".sidebar__right").addClass("active");
         } else {
             $(".onTop").removeClass("active");
             $(".navbar").removeClass("active");
+            $(".sidebar__right").removeClass("active");
         }
     });
     $('.onTop').click(function(e) {
@@ -43,7 +45,7 @@ $(document).ready(function() {
 
     $(".wrap-banner_slide").slick({
         dots: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         infinite: true,
         speed: 500,
@@ -56,15 +58,15 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         speed: 300,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                     infinite: true,
                     arrows: true,
                 }

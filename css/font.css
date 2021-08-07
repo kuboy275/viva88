@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'San Francisco Bold';
+    src: url('../fonts/SanFranciscoDisplay-Bold.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'San Francisco Light';
+    src: url('../fonts/SanFranciscoDisplay-Light.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'San Francisco Medium';
+    src: url('../fonts/SanFranciscoDisplay-Medium.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'San Francisco Regular';
+    src: url('../fonts/SanFranciscoDisplay-Regular.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+.font-light {
+    font-family: 'San Francisco Light';
+}
+
+.font-regular {
+    font-family: 'San Francisco Regular';
+}
+
+.font-medium {
+    font-family: 'San Francisco Medium';
+}
+
+.font-bold {
+    font-family: 'San Francisco Bold';
+}
+
+.font-18px {
+    font-size: 18px;
+}
+
+.font-16px {
+    font-size: 16px;
+}
+
+.font-14px {
+    font-size: 14px;
+}
+
+.font-20px {
+    font-size: 20px;
+}
+
+.font-22px {
+    font-size: 22px;
+}
