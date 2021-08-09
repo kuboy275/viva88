@@ -7,7 +7,20 @@
     }
 }
 
+@media (min-width:992px) {
+    header .login-mobile {
+        display: none;
+    }
+    header .login-mobile .modal-open,
+    .modal-backdrop {
+        display: none!important;
+    }
+}
+
 @media (max-width:991px) {
+    .navbar .navbar-toggler {
+        margin: 10px;
+    }
     .banner .banner-item .content {
         left: 0;
         height: 60%;
@@ -41,23 +54,22 @@
     .wrap-opinion .item .description .des-text i {
         display: none;
     }
+    header .login-pc {
+        display: none;
+    }
+    header .login-mobile {
+        display: block;
+        text-align: right;
+    }
 }
 
 @media (max-width:768px) {
-    header .login {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 20px 0;
+    .register form button {
+        width: 50%;
     }
-    header .login .form-group {
-        margin-bottom: 20px;
-    }
-    header .login .form-check {
-        top: -10px;
-        left: 105%;
-    }
-    header .login button {
-        margin-bottom: 20px;
+    header .modal-content {
+        width: 80%;
+        margin: 0 auto;
     }
     .img-banner {
         display: none;
@@ -107,7 +119,15 @@
 
 @media(max-width:575px) {
     .banner .banner-item img {
-        height: 500px;
+        height: 200px;
+        object-fit: fill;
+    }
+    .wrap-content-slide .content-slide-item .content {
+        height: 50%;
+    }
+    .wrap-content-slide .content-slide-item img {
+        height: 200px;
+        object-fit: fill;
     }
     .banner .banner-item .content {
         left: 0;
@@ -139,9 +159,6 @@
         width: 80%;
         padding: 10px;
     }
-    .wrap-opinion .item .description .line {
-        /* display: none; */
-    }
     .wrap-opinion .item .description .rate {
         /* display: none; */
         margin-left: 0!important;
@@ -153,5 +170,8 @@
     }
     .list-status table tbody tr td:nth-child(5) .btn {
         width: auto;
+    }
+    .list table {
+        width: 150%;
     }
 }

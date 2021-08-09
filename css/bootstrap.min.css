@@ -6236,7 +6236,8 @@ a.close.disabled {
 }
 
 .modal-open {
-    overflow: hidden
+    overflow: auto;
+    padding-right: 0 !important;
 }
 
 .modal-open .modal {

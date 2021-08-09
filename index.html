@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viva88</title>
+    <link rel="shortcut icon" href="https://i.vixcdn.com/Login/viva88/common/Images/favicon.ico?v=201911140312" type="image/x-icon">
     <link rel="stylesheet" href="css/fontawesome-all-min.css.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -72,15 +73,16 @@
     <header id="header">
         <div class="container py-3">
             <div class="row align-items-center">
-                <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="col-4 col-sm-6 col-md-3">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="./images/logo_vn.svg" width="100%" alt="">
+                            <img src="./images/logo_vn.svg" width="100%" alt="logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-9 col-lg-9">
-                    <form class="login form-inline justify-content-md-end">
+                <div class="col-8 col-sm-6 col-md-9">
+                    <!-- FORM LOGIN RESPONSIVE IN WIDTH > 990 px -->
+                    <form class="login login-pc form-inline justify-content-md-end">
                         <div class="form-group position-relative">
                             <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập">
                             <div class="form-check mb-2">
@@ -99,6 +101,45 @@
                         <button type="submit" class="btn btn-home mr-2"> Đăng nhập</button>
                         <button class="btn btn-orange">Đăng ký</button>
                     </form>
+                    <!-- --------------------------------- -->
+                    <!-- FORM LOGIN RESPONSIVE IN WIDTH < 990 px  -->
+                    <div class="login login-mobile">
+                        <button type="submit" class="btn btn-home mr-2" data-toggle="modal" data-target="#formMobile"> Đăng nhập</button>
+                        <button class="btn btn-orange">Đăng ký</button>
+                        <div class="modal pr-0 fade" id="formMobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title font-bold">Đăng nhập</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập">
+                                            <div class="show-hide form-group mx-md-2 my-3 position-relative">
+                                                <input type="password" class="form-control bg-input" placeholder="Mật khẩu">
+                                                <div class="btn-show-hide">
+                                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mb-3 position-relative">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label font-medium" for="autoSizingCheck">
+                                                    Ghi nhớ
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                                        <button type="submit" class="btn btn-home">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,21 +273,17 @@
     <!-- END SLIDER CONTENT -->
     <!-- ------------------ -->
     <!-- START LIST -->
-    <section id="particles-list" class="list py-5 position-relative">
+    <section class="list pt-5 position-relative">
         <div class="container wrap-list">
             <div class="row">
-                <div class="col-sm-12 col-md-12 mb-5">
-                    <div class="banner-top text-center mb-5 text-white font-bold">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-4">
+                    <div class="banner-top d-flex align-items-center justify-content-around text-center text-white font-bold">
                         <img src="./images/top10.png" alt="">
-                        <h1>THÀNH VIÊN VIP THÁNG</h1>
+                        <h3>THÀNH VIÊN VIP THÁNG</h3>
                         <img src="./images/top10.png" alt="">
                     </div>
-                    <!-- <img src="./images/4744287.jpg" class="banner-top10" width="100%" alt=""> -->
-                    <div class="card list-top">
-                        <!-- <div class="card-header text-center  text-white font-bold">
-                            <i class="fas fa-trophy-alt font-22px mr-2"></i> THÀNH VIÊN VIP THÁNG
-                        </div> -->
-                        <table class="table mb-0 ">
+                    <div class="list-top mt-4 table-responsive-md">
+                        <table class="table">
                             <thead>
                                 <tr>
                                     <th class="text-center">#</th>
@@ -320,96 +357,94 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 mb-4">
-                    <div class="card list-status">
-                        <div class="card-header text-center font-bold bg-orange text-white">
-                            <i class="fas fa-stars font-22px mr-2"></i> TRẠNG THÁI NẠP RÚT MỚI NHẤT
-                        </div>
-                        <div class="card-body ">
-                            <table class="table border table-striped mb-0">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">#</th>
-                                        <th>Thành viên</th>
-                                        <th>Số tiền</th>
-                                        <th>Nạp/rút</th>
-                                        <th>Trạng thái</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td> Ronaldo1</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="withdrawal btn">Rút tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td> Lionel Messi</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="recharge btn">Nạp tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td> Pelé</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="recharge btn">Nạp tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td> Cafu</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="withdrawal btn">Rút tiền</span></td>
-                                        <td><span class="new btn">Mới</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td> Zinedine Zidane</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="recharge btn">Nạp tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td> Lothar Matthaus</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="withdrawal btn">Rút tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td> Roberto Carlos</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="withdrawal btn">Rút tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td> Robert Lewandowski</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="recharge btn">Nạp tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td> Kevin De Bruyne</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="recharge btn">Nạp tiền</span></td>
-                                        <td><span class="success btn">Thành công</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">10</th>
-                                        <td> Neymar</td>
-                                        <td>1.000.000 đ</td>
-                                        <td><span class="withdrawal btn">Rút tiền</span></td>
-                                        <td><span class="fail btn">Từ chối</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-4">
+                    <div class="banner-top d-flex align-items-center justify-content-center text-white font-bold text-uppercase">
+                        <h3>Trạng thái nạp rút mới nhất</h3>
+                    </div>
+                    <div class="list-status mt-4 table-responsive-md">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">#</th>
+                                    <th>Thành viên</th>
+                                    <th>Số tiền</th>
+                                    <th>Nạp/rút</th>
+                                    <th>Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td> Ronaldo1</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="withdrawal btn">Rút tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td> Lionel Messi</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="recharge btn">Nạp tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td> Pelé</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="recharge btn">Nạp tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td> Cafu</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="withdrawal btn">Rút tiền</span></td>
+                                    <td><span class="new btn">Mới</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td> Zinedine Zidane</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="recharge btn">Nạp tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td> Lothar Matthaus</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="withdrawal btn">Rút tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td> Roberto Carlos</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="withdrawal btn">Rút tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td> Robert Lewandowski</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="recharge btn">Nạp tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td> Kevin De Bruyne</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="recharge btn">Nạp tiền</span></td>
+                                    <td><span class="success btn">Thành công</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td> Neymar</td>
+                                    <td>1.000.000 đ</td>
+                                    <td><span class="withdrawal btn">Rút tiền</span></td>
+                                    <td><span class="fail btn">Từ chối</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -441,29 +441,32 @@ nav.navbar.active {
 
 /* LIST */
 
+.list {
+    background-image: url(../images/cup2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 150px;
+    background-attachment: fixed;
+}
+
 .wrap-list {
     position: relative;
     z-index: 1;
 }
 
 .wrap-list .banner-top {
+    height: 60px;
     /* font-size: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.wrap-list .banner-top h1 {
+.wrap-list .banner-top h3 {
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .wrap-list .banner-top img {
     width: 80px;
     object-fit: cover;
-}
-
-.list .card-body {
-    padding: 0;
 }
 
 .list table tbody tr td,
@@ -473,10 +476,10 @@ nav.navbar.active {
     font-family: 'San Francisco Medium';
 }
 
-.list-status table tbody tr td,
-.list-status table tbody tr th {
-    padding: .475rem .75rem;
-    color: #a5b1c2;
+.list table tbody tr td,
+.list table tbody tr th {
+    height: 50px;
+    padding: 0 .75rem;
 }
 
 .list-status table tbody tr td .btn {
@@ -487,31 +490,30 @@ nav.navbar.active {
 
 /* list top */
 
-.list-top {
-    background-color: transparent;
+.list table {
+    opacity: .9;
 }
 
 .list-top table {
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 15px;
     background-image: linear-gradient( to left, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
 }
 
-.list-top table thead th:first-child {
+.list table thead th:first-child {
     border-radius: 15px 0 0 0;
 }
 
-.list-top table thead th:last-child {
+.list table thead th:last-child {
     border-radius: 0 15px 0 0;
 }
 
-.list-top table thead tr {
+.list table thead tr {
     background-color: #F6F5F5;
 }
 
-.list-top table thead th {
+.list table thead th {
     border: none;
-    /* font-family: 'San Francisco Bold'; */
     color: #2f3640;
 }
 
@@ -524,7 +526,6 @@ nav.navbar.active {
 
 .list-top table tbody tr:hover {
     transform: scale(1.02);
-    /* background-color: rgba(47, 54, 64, 1); */
 }
 
 .list table tbody tr th {
@@ -548,6 +549,10 @@ nav.navbar.active {
     display: inline-block;
 }
 
+.list table tbody tr:nth-child(2) th img {
+    width: 45px;
+}
+
 .list-top table tbody tr:nth-child(1) {
     background-color: rgb(250, 104, 85, .9);
 }
@@ -568,21 +573,25 @@ nav.navbar.active {
     background-color: rgb(194, 67, 72, .9);
 }
 
-.list-top table tbody tr:nth-child(5) th,
-.list-top table tbody tr:nth-child(10) th {
+.list-top table tbody tr:nth-child(5) th {
     border-radius: 0 0 0 15px;
 }
 
-.list-top table tbody tr:nth-child(5) td:last-child,
-.list-top table tbody tr:nth-child(10) td:last-child {
+.list-top table tbody tr:nth-child(5) td:last-child {
     border-radius: 0 0 15px 0;
 }
 
 
 /*  */
 
-.list-status table tbody tr td i.fa-star {
-    color: #f9ca24;
+.list-status table {
+    /* overflow: hidden; */
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.list-status table tbody tr {
+    color: #a5b1c2;
 }
 
 .list-status table tbody tr td:nth-child(4) .btn {
@@ -654,11 +663,11 @@ nav.navbar.active {
 /* REGISTER */
 
 .register {
-    background: linear-gradient(to right, rgba(35, 61, 103, .9), rgba(35, 61, 103, .5)), url(../images/1008.jpg);
+    background: linear-gradient(to right, rgba(35, 61, 103, .6), rgba(48, 62, 85, .2)), url(../images/register.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     position: relative;
     padding: 80px 0;
 }
@@ -978,7 +987,8 @@ footer .socialte a:not(:first-child) {
 
 /* PARTICLES JS */
 
-#particles-list canvas.particles-js-canvas-el {
+
+/* #particles-list canvas.particles-js-canvas-el {
     position: absolute;
     top: 0;
     left: 0;
@@ -989,4 +999,4 @@ footer .socialte a:not(:first-child) {
     position: relative;
     z-index: 2;
     border: none;
-}
+} */
