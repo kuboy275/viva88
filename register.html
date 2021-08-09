@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva88</title>
+    <link rel="shortcut icon" href="https://i.vixcdn.com/Login/viva88/common/Images/favicon.ico?v=201911140312" type="image/x-icon">
+    <link rel="stylesheet" href="css/fontawesome-all-min.css.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- LINK CSS -->
+</head>
+
+<body>
+    <!-- ONTOP -->
+    <a href="#" class="onTop"><i class="fad fa-chevron-up"></i></a>
+    <!--  -->
+    <!-- START SIDEBAR RIGHT -->
+    <div class="sidebar__right">
+        <a href="#!" class="sidebar__item">
+            <div class="icon"><i class="fad fa-user-alt"></i></div>
+            <div class="text font-medium font-20px">Tài khoản</div>
+        </a>
+        <a href="#!" class="sidebar__item">
+            <div class="icon"><i class="fad fa-sync-alt"></i></div>
+            <div class="text font-medium font-20px">Giao dịch</div>
+        </a>
+        <a href="#!" class="sidebar__item">
+            <div class="icon"><i class="fad fa-comments-alt"></i></div>
+            <div class="text font-medium font-20px">Chat ngay</div>
+        </a>
+        <a href="#!" class="sidebar__item">
+            <div class="icon"><i class="fad fa-bookmark"></i></div>
+            <div class="text font-medium font-20px">Hướng dẫn</div>
+        </a>
+        <a href="#!" class="sidebar__item">
+            <div class="icon"><i class="fad fa-headset"></i></div>
+            <div class="text font-medium font-20px">Hỗ trợ</div>
+        </a>
+    </div>
+    <!-- END SIDEBAR RIGHT -->
+    <!-- ----------------- -->
+    <!-- START NAV TOP -->
+    <div class="menu-top bg-home py-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <!-- <div class="text-white">
+                        <i class="fad fa-alarm-clock mr-1"></i>
+                        <span class="date"></span>
+                        <span> (GMT +07:00)</span>
+                    </div> -->
+                </div>
+                <div class="col-sm-12 col-md-6 text-sm-left text-md-right pl-sm-0">
+                    <div class="support">
+                        <a href="#"><i class="fas fa-bell-plus mr-1"></i> Thông báo</a>
+                        <a href="#" class="mx-4"><i class="fad fa-user-headset mr-1"></i> Hướng dẫn</a>
+                        <a href="callto:18008080"><i class="fad fa-sitemap mr-1"></i> Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV TOP -->
+    <!-- ----------- -->
+    <!-- START HEADER -->
+    <header id="header">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-4 col-sm-6 col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo_vn.svg" width="100%" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-6 col-md-9">
+                    <!-- FORM LOGIN RESPONSIVE IN WIDTH > 990 px -->
+                    <form class="login login-pc form-inline justify-content-md-end">
+                        <div class="form-group position-relative">
+                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label font-medium" for="autoSizingCheck">
+                                    Ghi nhớ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="show-hide form-group mx-md-2 position-relative">
+                            <input type="password" class="form-control bg-input" placeholder="Mật khẩu">
+                            <div class="btn-show-hide">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-home mr-2"> Đăng nhập</button>
+                        <a href="register.html" class="btn btn-orange">Đăng ký</a>
+                    </form>
+                    <!-- --------------------------------- -->
+                    <!-- FORM LOGIN RESPONSIVE IN WIDTH < 990 px  -->
+                    <div class="login login-mobile">
+                        <button type="submit" class="btn btn-home mr-2" data-toggle="modal" data-target="#formMobile"> Đăng nhập</button>
+                        <a href="register.html" class="btn btn-orange">Đăng ký</a>
+                        <div class="modal pr-0 fade" id="formMobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title font-bold">Đăng nhập</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập">
+                                            <div class="show-hide form-group mx-md-2 my-3 position-relative">
+                                                <input type="password" class="form-control bg-input" placeholder="Mật khẩu">
+                                                <div class="btn-show-hide">
+                                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mb-3 position-relative">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label font-medium" for="autoSizingCheck">
+                                                    Ghi nhớ
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                                        <button type="submit" class="btn btn-home">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- ---------- -->
+    <!-- START NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-home">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="container">
+                <div class="navbar-nav justify-content-between w-100">
+                    <a class="nav-link text-white font-medium font-18px" href="index.html">Trang chủ</a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Giới thiệu </a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Đăng ký tài khoản</a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Nạp tiền</a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Rút điểm</a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Chuyển điểm</a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Hướng dẫn</a>
+                    <a class="nav-link text-white font-medium font-18px" href="#">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+    <!-- ------- -->
+    <!-- START BANNER -->
+    <section class="banner overflow-x-hidden">
+        <div class="wrap-banner_slide">
+            <div class="banner-item">
+                <img src="./images/banner8.jpg" alt="">
+            </div>
+            <div class="banner-item">
+                <img src="./images/banner2.jpg" alt="">
+            </div>
+            <div class="banner-item">
+                <img src="./images/banner3.jpg" alt="">
+            </div>
+            <div class="banner-item">
+                <img src="./images/banner4.jpg" alt="">
+            </div>
+            <div class="banner-item">
+                <img src="./images/banner5.jpg" alt="">
+            </div>
+            <div class="banner-item">
+                <img src="./images/banner6.jpg" alt="">
+            </div>
+            <div class="banner-item">
+                <img src="./images/banner7.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- END BANNER -->
+    <!-- ---------- -->
+    <!-- START REGISTER -->
+    <section class="register register-page">
+        <div class="container">
+            <div class="title text-center text-white font-bold font-22px mb-5 position-relative">
+                ĐĂNG KÝ MỞ TÀI KHOẢN
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <div class="noti-form text-white mb-3 font-medium">
+                        Lưu ý những mục có dấu <span class="text-danger font-20px">( * )</span> bắt buộc phải nhập!
+                    </div>
+                    <form action="#" class="form-register">
+                        <!--  -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Họ và tên </label>
+                                <input type="text" class="form-control" required placeholder="Họ và tên phải trùng với tên tài khoản ngân hàng">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Số điện thoại </label>
+                                <input type="number" min="0" class="form-control" required placeholder="Sử dụng số điện thoại thật để nhận tài khoản">
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Tên đăng nhập </label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Mật khẩu </label>
+                                <input type="password" class="form-control" required placeholder="Mật khẩu trên 6 ký tự">
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Ngân hàng </label>
+                                <select class="form-control">
+                                    <option>Vettel Pay</option>
+                                    <option>Vietcombank</option>
+                                    <option>Vietinbank</option>
+                                    <option>BIDV</option>
+                                    <option>Agribank</option>
+                                    <option>VPbank</option>
+                                    <option>Sacombank</option>
+                                    <option>ACB</option>
+                                    <option>Techcombank</option>
+                                    <option>MSB</option>
+                                    <option>MB</option>
+                                    <option>Eximbank</option>
+                                    <option>Đông Á bank</option>
+                                    <option>Momo</option>
+                            </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Số tài khoản ngân hàng</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Tên chủ tài khoản </label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">(*)</span> Mã captcha </label>
+                                <div class="d-flex align-items-center">
+                                    <input type="text" class="form-control userInput mr-2" required placeholder="Vui lòng nhập đúng mã captcha">
+                                    <span id="code"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <button type="submit" class="btn btn-orange">Đăng ký</button>
+                    </form>
+                </div>
+                <div class="img-banner">
+                    <img src="./images/girl-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END REGISTER -->
+    <!-- ---------- -->
+    <!--  START  FOOTER -->
+    <footer class="bg-home">
+        <div class="copyright py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="text-white font-medium">Copyright<i class="far fa-copyright mx-1"></i><a href="index.html" class="text-white text-decoration-none" target="_blank">Viva88</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <ul class="list-footer d-flex justify-content-sm-center justify-content-md-center mb-0 list-unstyled ">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#!">Giới thiệu</a></li>
+                            <li><a href="#!">Đại lý</a></li>
+                            <li><a href="#!">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="socialte d-flex justify-content-sm-center justify-content-md-end">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- LINK JS -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/captcha.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/custom.js "></script>
+</body>
+
+</html>

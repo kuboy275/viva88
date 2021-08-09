@@ -64,6 +64,15 @@
 }
 
 @media (max-width:768px) {
+    .wrap-list .banner-top h3 {
+        font-size: 22px!important;
+    }
+    .onTop {
+        bottom: 130px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
     .register form button {
         width: 50%;
     }
@@ -115,6 +124,47 @@
         margin: 0!important;
         margin-top: 10px;
     }
+    footer {
+        padding-bottom: 120px;
+    }
+    /* SIDEBAR RIGHT */
+    .sidebar__right {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #233D67;
+        box-shadow: 0 4px 10px 0 #000;
+    }
+    .sidebar__right a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .sidebar__item .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 5px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    .sidebar__item .text {
+        position: relative;
+        overflow: visible;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        text-align: center;
+        padding: 5px;
+        font-size: 13px;
+    }
+    .sidebar__item:hover .text {
+        width: auto;
+    }
+    /* END SIDEBAR RIGHT */
 }
 
 @media(max-width:575px) {
@@ -172,6 +222,12 @@
         width: auto;
     }
     .list table {
-        width: 150%;
+        width: 130%;
+    }
+    footer ul {
+        margin-top: 10px;
+    }
+    footer .socialte {
+        margin-top: 10px;
     }
 }

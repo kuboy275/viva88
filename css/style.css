@@ -334,7 +334,13 @@ nav.navbar.active {
 /* START SLIDER CONTENT */
 
 .slide-content {
-    background: linear-gradient(to top, rgba(35, 61, 103, 1), rgba(35, 61, 103, .5), rgba(35, 61, 103, .2));
+    /* background: linear-gradient(to top, rgba(35, 61, 103, 1), rgba(35, 61, 103, .5), rgba(35, 61, 103, .2)), url(../images/bg-scroll.jpg); */
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .wrap-content-slide .slick-slide {
@@ -403,7 +409,7 @@ nav.navbar.active {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(to bottom, rgba(35, 61, 103, 0) 55%, rgba(36, 46, 61, .9) 100%);
+    background: linear-gradient(to bottom, rgba(35, 61, 103, 0) 30%, rgba(36, 46, 61, .9) 100%);
 }
 
 .wrap-content-slide .content-slide-item img {
@@ -435,6 +441,16 @@ nav.navbar.active {
     object-fit: cover;
 }
 
+.wrap-content-slide .content-slide-item .content h4 {
+    font-size: 20px;
+    font-family: 'San Francisco Bold';
+}
+
+.wrap-content-slide .content-slide-item .content p {
+    font-size: 18px;
+    /* font-family: 'San Francisco Medium'; */
+}
+
 
 /* END SLIDER CONTENT */
 
@@ -442,7 +458,8 @@ nav.navbar.active {
 /* LIST */
 
 .list {
-    background-image: url(../images/cup2.webp);
+    background: linear-gradient( to top, rgba(35, 61, 103, .7), rgba(35, 61, 103, .5)), url(../images/cup2.webp);
+    /* background-image: url(../images/cup2.webp); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -461,7 +478,36 @@ nav.navbar.active {
 }
 
 .wrap-list .banner-top h3 {
-    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'San Francisco Bold';
+    font-size: 28px;
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrap-list .col-sm-12:nth-child(2) .banner-top h3 {
+    font-family: 'San Francisco Bold';
+    font-size: 28px;
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrap-list .col-sm-12:nth-child(2) .banner-top i {
+    font-size: 40px;
+    transform: translateY(-30%);
+    margin-right: 5px;
+    color: #F29D4A;
 }
 
 .wrap-list .banner-top img {
@@ -587,11 +633,16 @@ nav.navbar.active {
 .list-status table {
     /* overflow: hidden; */
     border-radius: 15px;
-    background-color: #fff;
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .list-status table tbody tr {
-    color: #a5b1c2;
+    color: #535c68;
 }
 
 .list-status table tbody tr td:nth-child(4) .btn {
@@ -1000,3 +1051,23 @@ footer .socialte a:not(:first-child) {
     z-index: 2;
     border: none;
 } */
+
+
+/* REGISTER PAGE */
+
+.register-page {
+    background: linear-gradient(to right, rgba(35, 61, 103, .6), rgba(48, 62, 85, .2)), url(../images/bg-scroll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    position: relative;
+    padding: 80px 0;
+}
+
+.register-page form input {
+    border-radius: .25rem;
+}
+
+
+/* END REGISTER PAGE */
