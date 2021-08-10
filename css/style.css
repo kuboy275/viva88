@@ -44,6 +44,10 @@ html {
     color: #7f8c8d;
 }
 
+.text-orange {
+    color: #FF5E00;
+}
+
 .img-cover {
     object-fit: cover;
 }
@@ -1133,3 +1137,58 @@ footer .socialte a:not(:first-child) {
 
 
 /* END REGISTER PAGE */
+
+
+/* ========================= */
+
+
+/* SIDEBAR LEFT */
+
+.side__left ul li {
+    padding: 0;
+}
+
+.side__left ul li a {
+    display: inline-block;
+    color: #233D67;
+    padding: .6rem 1.2rem;
+    width: 100%;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.side__left ul li a i {
+    margin-right: 5px;
+    transform: translateY(1px);
+}
+
+.side__left ul li:hover {
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    cursor: pointer;
+}
+
+.side__left ul li:hover a {
+    color: #fff;
+}
+
+
+/* END SIDEBAR LEFT */
+
+
+/* ========================= */
+
+
+/* CONTACTS */
+
+.contact .card-body h6 i {
+    width: 4%;
+    color: #FF5E00;
+    font-size: 18px;
+}
+
+.contact .card-body h6 a {
+    color: #FF5E00;
+}
+
+
+/* ========================= */
