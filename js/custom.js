@@ -150,6 +150,14 @@ $(document).ready(function() {
         ]
     });
 
-
+    $(".sidebar__item").click(function() {
+        if ($(this).hasClass("active")) {
+            $(".sidebar__item").removeClass("active");
+        } else {
+            $(".sidebar__item").removeClass("active");
+            $(this).fadeIn();
+            $(this).addClass("active");
+        }
+    })
 
 });
