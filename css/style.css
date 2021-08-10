@@ -194,7 +194,22 @@ html {
 }
 
 .sidebar__item .item-child a {
+    width: 130px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 5px;
+    transition: 1s;
+    background-size: 200% auto;
     transform: translateX(200%);
+}
+
+.sidebar__item .item-child a i {
+    margin-right: 5px;
 }
 
 .sidebar__item.active .item-child a {
@@ -211,20 +226,6 @@ html {
 
 .sidebar__item .item-child a:nth-child(3) {
     transition-delay: .5s;
-}
-
-.sidebar__item .item-child a {
-    width: 120px;
-    height: 30px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border-radius: 15px;
-    margin-top: 5px;
-    transition: 1s;
-    background-size: 200% auto;
 }
 
 .sidebar__item .item-child a:hover {
