@@ -198,7 +198,8 @@ html {
     height: 30px;
     font-size: 14px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 15px;
     align-items: center;
     color: #fff;
     border-radius: 15px;
