@@ -158,6 +158,13 @@ $(document).ready(function() {
             $(this).fadeIn();
             $(this).addClass("active");
         }
-    })
+    });
+
+    new PrettyScroll('.side__left', {
+        container: '.content__right',
+        offsetTop: 120,
+        offsetBottom: 20,
+        breakpoint: 992
+    });
 
 });
