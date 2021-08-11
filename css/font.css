@@ -1,49 +1,49 @@
 @font-face {
-    font-family: 'San Francisco Bold';
-    src: url('../fonts/SanFranciscoDisplay-Bold.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Bold.woff') format('woff');
+    font-family: 'SVN-Arial Medium';
+    src: url('../fonts/SVN-Arial3.woff2') format('woff2'), url('../fonts/SVN-Arial3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'SVN-Arial Bold';
+    src: url('../fonts/SVN-ArialBold.woff2') format('woff2'), url('../fonts/SVN-ArialBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'San Francisco Light';
-    src: url('../fonts/SanFranciscoDisplay-Light.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'SVN-Arial Regular';
+    src: url('../fonts/SVN-ArialRegular.woff2') format('woff2'), url('../fonts/SVN-ArialRegular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'San Francisco Medium';
-    src: url('../fonts/SanFranciscoDisplay-Medium.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: 'San Francisco Regular';
-    src: url('../fonts/SanFranciscoDisplay-Regular.woff2') format('woff2'), url('../fonts/SanFranciscoDisplay-Regular.woff') format('woff');
+    font-family: 'SVN-Arial Light';
+    src: url('../fonts/SVN-Arial2.woff2') format('woff2'), url('../fonts/SVN-Arial2.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: fallback;
 }
 
 .font-light {
-    font-family: 'San Francisco Light';
+    font-family: 'SVN-Arial Light';
 }
 
 .font-regular {
-    font-family: 'San Francisco Regular';
+    font-family: 'SVN-Arial Regular';
 }
 
 .font-medium {
-    font-family: 'San Francisco Medium';
+    font-family: 'SVN-Arial Bold';
 }
 
 .font-bold {
-    font-family: 'San Francisco Bold';
+    font-family: 'SVN-Arial Bold';
 }
 
 .font-18px {

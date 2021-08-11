@@ -177,6 +177,9 @@
 }
 
 @media(max-width:575px) {
+    .menu-top .support a {
+        font-size: 13px;
+    }
     .wrap-list .banner-top h3 {
         font-size: 18px;
     }
@@ -187,7 +190,7 @@
         height: 40%;
     }
     .banner .banner-item img {
-        height: auto;
+        height: 250px;
     }
     .banner .banner-item .content {
         left: 0;
@@ -242,5 +245,17 @@
     }
     html {
         overflow-x: hidden!important;
+    }
+    /* CONTENT */
+    .content .row,
+    .register-page .row {
+        flex-direction: column-reverse;
+    }
+    .content .row .side__left,
+    .register-page .row .side__left {
+        margin-top: 50px;
+    }
+    .side__left ul li a {
+        font-size: 16px;
     }
 }

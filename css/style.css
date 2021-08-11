@@ -1,6 +1,9 @@
+* {
+    font-family: 'SVN-Arial Regular';
+}
+
 html {
     overflow-x: hidden;
-    font-family: 'San Francisco Medium';
 }
 
 .btn:focus,
@@ -517,7 +520,7 @@ nav.navbar.active {
 
 .wrap-content-slide .content-slide-item .content h4 {
     font-size: 20px;
-    font-family: 'San Francisco Bold';
+    font-family: 'SVN-Arial Bold';
 }
 
 .wrap-content-slide .content-slide-item .content p {
@@ -533,7 +536,6 @@ nav.navbar.active {
 
 .list {
     background: linear-gradient( to top, rgba(35, 61, 103, .7), rgba(35, 61, 103, .5)), url(../images/cup2.webp);
-    /* background-image: url(../images/cup2.webp); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -552,27 +554,17 @@ nav.navbar.active {
 }
 
 .wrap-list .banner-top h3 {
-    font-family: 'San Francisco Bold';
+    font-family: 'SVN-Arial Bold';
     font-size: 28px;
     background: #F2994A;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F2C94C, #F2994A);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .wrap-list .col-sm-12:nth-child(2) .banner-top h3 {
-    font-family: 'San Francisco Bold';
-    font-size: 28px;
-    background: #F2994A;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #F2C94C, #F2994A);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -593,7 +585,8 @@ nav.navbar.active {
 .list table tbody tr th {
     vertical-align: middle;
     border-top: none;
-    font-family: 'San Francisco Medium';
+    /* font-family: 'SVN-Arial Bold'; */
+    font-weight: bold;
 }
 
 .list table tbody tr td,
@@ -639,7 +632,7 @@ nav.navbar.active {
 
 .list-top table tbody tr {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     transition: all .1s ease-in;
     cursor: pointer;
 }
@@ -725,8 +718,7 @@ nav.navbar.active {
 
 .list-status table tbody tr td:nth-child(5) .btn {
     width: 120px;
-    font-family: 'San Francisco Bold';
-    font-size: 16px;
+    font-family: 'SVN-Arial Bold';
     transition: all .2s ease-in;
 }
 
@@ -803,7 +795,7 @@ nav.navbar.active {
 }
 
 .register form .form-group label {
-    font-family: 'San Francisco Medium';
+    font-family: 'SVN-Arial Bold';
     color: white;
 }
 
@@ -835,6 +827,7 @@ nav.navbar.active {
 }
 
 .register form button {
+    font-family: 'SVN-Arial Bold';
     border-radius: 15px;
     padding: 10px 15px;
     width: 25%;
@@ -919,7 +912,7 @@ nav.navbar.active {
 
 .wrap-new .item .content .date {
     color: #FF5E00;
-    font-family: 'San Francisco Bold';
+    font-family: 'SVN-Arial Bold';
     font-size: 18px;
 }
 
@@ -996,7 +989,7 @@ nav.navbar.active {
 
 .wrap-opinion .item .info .name {
     margin: 5px 0;
-    font-family: 'San Francisco Bold';
+    font-family: 'SVN-Arial Bold';
     font-size: 20px;
 }
 
@@ -1072,7 +1065,7 @@ nav.navbar.active {
 /* FOOTER */
 
 .list-footer li a {
-    font-family: 'San Francisco Medium';
+    font-family: 'SVN-Arial Bold';
     color: #fff;
 }
 
