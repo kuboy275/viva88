@@ -68,6 +68,9 @@
         text-align: right;
     }
     /* CONTENT */
+    .register-page.info .row {
+        flex-direction: column!important;
+    }
     .content .row,
     .register-page .row {
         flex-direction: column-reverse;
@@ -88,7 +91,7 @@
         height: 40px;
         line-height: 40px;
     }
-    .register form button {
+    .register form>button {
         width: 50%;
     }
     header .modal-content {

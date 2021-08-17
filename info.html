@@ -118,7 +118,7 @@
                     <!-- FORM LOGIN RESPONSIVE IN WIDTH > 990 px -->
                     <form class="login login-pc form-inline justify-content-md-end">
                         <div class="form-group position-relative">
-                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập">
+                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập" required>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox">
                                 <label class="form-check-label font-medium" for="autoSizingCheck">
@@ -127,13 +127,36 @@
                             </div>
                         </div>
                         <div class="show-hide form-group mx-md-2 position-relative">
-                            <input type="password" class="form-control bg-input" placeholder="Mật khẩu">
+                            <input type="password" class="form-control bg-input" placeholder="Mật khẩu" required>
                             <div class="btn-show-hide">
                                 <i class="fa fa-eye-slash" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-home mr-2"> Đăng nhập</button>
+                        <button type="submit" class="btn btn-home mr-2" data-toggle="modal" data-target="#loginPage"> Đăng nhập</button>
                         <a href="register.html" class="btn btn-orange">Đăng ký</a>
+                        <div class="modal fade" id="loginPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-home text-white">
+                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            <span class="text-danger"> <i class="fad fa-exclamation mr-1"></i></span> Vui lòng nhập tên họ tên
+                                        </p>
+                                        <p>
+                                            <span class="text-danger"> <i class="fad fa-exclamation mr-1"></i></span> Vui lòng nhập tên họ tên
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-orange" data-dismiss="modal">Đóng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                     <!-- --------------------------------- -->
                     <!-- FORM LOGIN RESPONSIVE IN WIDTH < 990 px  -->
@@ -151,9 +174,9 @@
                                     </div>
                                     <div class="modal-body">
                                         <form action="#">
-                                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập">
+                                            <input type="text" class="form-control bg-input" placeholder="Tên đăng nhập" required>
                                             <div class="show-hide form-group mx-md-2 my-3 position-relative">
-                                                <input type="password" class="form-control bg-input" placeholder="Mật khẩu">
+                                                <input type="password" class="form-control bg-input" placeholder="Mật khẩu" required>
                                                 <div class="btn-show-hide">
                                                     <i class="fa fa-eye-slash" aria-hidden="true"></i>
                                                 </div>
@@ -164,16 +187,22 @@
                                                     Ghi nhớ
                                                 </label>
                                             </div>
+                                            <div class="modal-footer p-0">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                                                <button type="submit" class="btn btn-home">Đăng nhập</button>
+                                            </div>
                                         </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
-                                        <button type="submit" class="btn btn-home">Đăng nhập</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- AFTER LOGIN  -->
+                    <!-- <div class="d-flex justify-content-end">
+                            <a href="info.html" class="btn btn-home mr-2">Hi: Admin</a>
+                            <a href="#!" class="btn btn-orange">Đăng xuất</a>
+                    </div> -->
+                    <!--  -->
                 </div>
             </div>
         </div>
@@ -231,28 +260,52 @@
         </div>
     </section>
     <!-- END BANNER -->
-    <!-- ---------- -->
     <!-- START REGISTER -->
-    <section class="register register-page">
+    <section class="register register-page info">
         <div class="container">
             <div class="text-uppercase title text-center text-white font-bold font-22px mb-5 position-relative">
-                Rút tiền
+                Thông tin tài khoản
             </div>
             <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <form action="#" class="form-register">
+                        <!--  -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><i class="fad fa-user"></i> Họ tên </label>
+                                <input type="text" class="form-control" value="Nguyễn Hoàng Anh" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label> <i class="fad fa-mobile-alt"></i> Số điện thoại </label>
+                                <input type="text" class="form-control" value="09999933" required>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><i class="fad fa-user-shield"></i> Tên đăng nhập </label>
+                                <input type="text" class="form-control" value="Nguyễn Hoàng Anh" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><i class="fad fa-user-tie"></i> Tài khoản game </label>
+                                <input type="text" class="form-control" value="J2ADASD" required>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </form>
+                </div>
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="side__left">
                         <div class="card">
                             <div class="card-header bg-home text-white font-bold font-20px">
-                                <a class="text-white text-decoration-underline" href="index.html">Trang chủ </a>
-                                <span class="mx-2">/</span>
-                                <span>Rút tiền</span>
+                                Thông tin tài khoản
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <a href="index.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Đăng ký</a>
+                                    <a href="bank-account.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Tài khoản ngân hàng</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="register.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Đăng nhập</a>
+                                    <a href="forgot-password.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Đổi mật khẩu</a>
                                 </li>
                                 <li class="list-group-item">
                                     <a href="recharge.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Nạp tiền</a>
@@ -261,98 +314,17 @@
                                     <a href="with-draw.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Rút tiền </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="transfer.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Chuyển điểm</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="support.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Hướng dẫn</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="register.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Đăng ký tài khoản Viva88</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="suport-recharge.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Hướng dẫn nạp tiền</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="suport-with-draw.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Hướng dẫn rút tiền</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="suport-transfer.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Hướng dẫn chuyển điểm</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="suport-access.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i> Hướng dẫn truy cập</a>
+                                    <a href="transaction-history.html" class="font-18px font-medium"><i class="fad fa-angle-right"></i>Lịch sử giao dịch</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-                    <div class="noti-form text-white mb-3 font-medium">
-                        Lưu ý những mục có dấu <span class="text-danger font-20px">( * )</span> bắt buộc phải nhập!
-                    </div>
-                    <form action="#" class="form-register">
-                        <!--  -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label><span class="text-danger">(*)</span> Tài khoản ngân hàng </label>
-                                <select class="form-control" required>
-                                    <option>Vettel Pay</option>
-                                    <option>Vietcombank</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label><span class="text-danger">(*)</span> Số tiền cần rút </label>
-                                <input type="number" class="form-control" required>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label><span class="text-danger">(*)</span> Tài khoản game </label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label><span class="text-danger">(*)</span> Mã captcha </label>
-                                <div class="d-flex align-items-center">
-                                    <input type="text" class="form-control userInput mr-2" required placeholder="Nhập đúng mã captcha">
-                                    <span id="code"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <button type="submit" class="btn btn-orange" data-toggle="modal" data-target="#withDraw">Rút tiền</button>
-                        <div class="modal fade" id="withDraw" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header bg-home text-white">
-                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
-                                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>
-                                            <span class="text-danger"> <i class="fad fa-exclamation mr-1"></i></span> Vui lòng nhập tên họ tên
-                                        </p>
-                                        <p>
-                                            <span class="text-danger"> <i class="fad fa-exclamation mr-1"></i></span> Vui lòng nhập tên họ tên
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-orange" data-dismiss="modal">Đóng</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- <div class="img-banner">
-                    <img src="./images/girl-removebg-preview.png" alt="">
-                </div> -->
             </div>
         </div>
     </section>
     <!-- END REGISTER -->
-    <!-- ---------- -->
+    <!-- ----------- -->
     <!--  START  FOOTER -->
     <footer class="bg-home">
         <div class="copyright py-3">

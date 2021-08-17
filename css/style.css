@@ -826,11 +826,12 @@ nav.navbar.active {
     border-color: #FF5E00;
 }
 
-.register form button {
+.register form>button {
     font-family: 'SVN-Arial Bold';
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 10px 15px;
     width: 25%;
+    font-size: 18px;
     margin-top: 20px;
 }
 

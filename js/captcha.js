@@ -25,13 +25,13 @@ function createCaptcha() {
     return code;
 }
 
-submitBtn.disabled = true;
+// submitBtn.disabled = true;
 input.addEventListener("keyup", function() {
     let val = input.value;
     if (val === code.textContent) {
-        submitBtn.disabled = false;
+        // submitBtn.disabled = false;
     } else {
-        submitBtn.disabled = true;
+        // submitBtn.disabled = true;
     }
 })
 
