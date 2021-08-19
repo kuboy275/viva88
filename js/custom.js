@@ -13,8 +13,7 @@ $(document).ready(function() {
     // 
 
     $(window).scroll(function() {
-        let endHeightBanner = $(".banner").height();
-        if ($(this).scrollTop() > endHeightBanner / 2) {
+        if ($(this).scrollTop() > 100) {
             $(".onTop").addClass("active");
             $(".navbar").addClass("active");
             $(".sidebar__right").addClass("active");

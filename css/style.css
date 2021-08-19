@@ -79,9 +79,9 @@ html {
     background: linear-gradient(to right, #F37335, #FDC830);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     font-size: 20px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     border-radius: 50%;
     transition: all .2s ease-in-out;
@@ -128,11 +128,11 @@ html {
 
 .sidebar__item .text {
     position: relative;
-    height: 50px;
-    border-radius: 50px;
+    height: 40px;
+    border-radius: 40px;
     z-index: -1;
     transition: all .5s ease;
-    width: 150px;
+    width: 170px;
     padding-left: 20px;
     font-size: 15px;
     display: flex;
@@ -143,14 +143,14 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .sidebar__item:nth-child(1) .icon,
@@ -201,12 +201,12 @@ html {
 }
 
 .sidebar__item .item-child a {
-    width: 130px;
+    width: 150px;
     height: 30px;
     font-size: 14px;
     display: flex;
     justify-content: start;
-    padding-left: 15px;
+    padding-left: 10px;
     align-items: center;
     color: #fff;
     border-radius: 15px;
@@ -234,6 +234,10 @@ html {
 
 .sidebar__item .item-child a:nth-child(3) {
     transition-delay: .5s;
+}
+
+.sidebar__item .item-child a:nth-child(4) {
+    transition-delay: .6s;
 }
 
 .sidebar__item .item-child a:hover {
@@ -270,7 +274,7 @@ html {
 header form .form-check {
     margin-top: 10px;
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 0;
 }
 
